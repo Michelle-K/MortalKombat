@@ -1,0 +1,199 @@
+body{
+	margin-top: 0;
+	background-image: url("../images/logo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: black;
+
+}
+
+body, html{
+	height: 100%;
+}
+
+.page-header{
+	margin: 20px 0 0 0;
+	border-bottom: none;
+
+}
+
+section{
+	padding-top: 0;
+}
+
+.player{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+#player1 ,
+#player2,
+#player3,
+#player4{
+	display: inline-block;
+	background-color: #760604;
+	margin: 35px 30px;
+
+}
+h4{
+	background-color: black;
+	padding: 10px 20px;
+	width:100%;
+	color:white;
+	
+}
+
+h1{
+	text-align: center;
+	color: white;
+}
+
+#enemy1,
+#enemy2,
+#enemy3,
+#enemy4{
+	
+	display: none;
+	background-color: #760604;
+	margin: 35px 53px;
+}
+
+#choice1{
+
+}
+
+#choice2{
+	display: none;
+}
+
+#battleButton{
+	display: none;
+	
+	
+}
+
+#battlePlayer{
+	float: left;
+	
+	margin-top: 300px;
+}
+
+#battleEnemy{
+	float: right;
+
+}
+
+.battleGround{
+	display: none;
+	z-index: 1;
+	
+	
+}
+#arena{
+	width:100%;
+	position: absolute;
+	z-index: -1;
+	
+}
+
+#stage1{
+	padding-left: 50px;
+	display: inline-block;
+	float: left;
+	padding-top: 120px;
+}
+
+#stage1 img{
+	height:350px;
+	width:250px;
+
+}
+#stage2{
+	padding-right: 50px;
+	display: inline-block;
+	float:right;
+	padding-top: 120px;
+}
+
+#stage2 img{
+	height:350px;
+	width:250px;
+	
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+#me, #you{
+	height:350px;
+	width:250px;
+}
+
+#fight{
+	display: none;
+	text-align: center;
+}
+
+#userStats{
+	background-color: #760604;
+	color: white;
+	font-size: 30px;
+	font-family: "Crushed";
+	padding: 15px 20px;
+	margin-top: 80px;
+	border: 4px solid black;
+
+}
+
+#enemyStats{
+	background-color: #760604;
+	color: white;
+	font-size: 30px;
+	font-family: "Crushed";
+	padding: 15px 20px;
+	margin-top: 80px;
+	border: 4px solid black;
+
+}
+
+/*#fatality{
+	display:inline-block;
+}*/
+
+#fatal1, #fatal2, #fatal3, #fatal4{
+	display: none;
+	
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 36px 0 0 100px;
+}
+#nextBattle{
+	display: none;
+}
+
+#fatal1{
+	margin: 36px 0 0 100px;
+}
+#fatal2{
+	margin: 36px 0 0 100px;
+}
+#fatal3{
+	margin: 36px 0 0 100px;
+}
+
+@media screen and (max-width: 1280px){
+	#arena{
+		height: 670px;
+	}
+	#userStats{
+		padding-top: 20px;
+	}
+	#enemyStats{
+		padding-top: 20px;
+	}
+}

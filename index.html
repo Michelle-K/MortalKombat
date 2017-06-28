@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mortal Kombat</title>
+<!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Crushed|Walter+Turncoat" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+    <!-- MyStyle CSS -->
+    <link href="css/mystyle.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    
+
+    <!-- Full Width Image Header with Logo -->
+    <!-- Image backgrounds are set within the full-width-pics.css file. -->
+    <div class="page-header">
+        <img src="images/MKheader.png" alt="mortal komab"> <small>RPG</small>
+    </div>
+
+    <header class="image-bg-fluid-height" id="main-image">
+      <!--  Select your player -->        
+        
+        <div id="player1" class="players">
+            <img class="img-responsive img-left player" src="gifs/goro-main-crop.gif" alt="">
+            <h4>Goro</h4>
+            <h4>Health: 100</h4>
+        </div>
+        <div id="player2" class="players">
+            <img class="img-responsive img-left player" src="gifs/subzero-main-crop.gif" alt="">
+            <h4>SubZero</h4>
+            <h4>Health: 110</h4>
+        </div>
+        
+
+        <div id="player3" class="players">
+            <img class="img-responsive img-left player" src="gifs/mileena-main.gif" alt="">
+            <h4>Mileena</h4>
+            <h4>Health: 120</h4>
+        </div>
+        <div id="player4" class="players">
+            <img class="img-responsive img-left player" src="gifs/scorpion-main.gif" alt="">
+            <h4>Scorpion</h4>
+            <h4>Health: 130</h4>
+        </div>
+
+
+<!--  Select your enemy -->
+        <div id="enemy1">
+            <img class="img-responsive img-left player" src="gifs/goro-main-crop.gif" alt="">
+            <h4>Goro</h4>
+            <h4>Health: 100</h4>
+        </div>
+        <div id="enemy2">
+            <img class="img-responsive img-left player" src="gifs/subzero-main-crop.gif" alt="">
+            <h4>SubZero</h4>
+            <h4>Health: 110</h4>
+        </div>
+        <div id="enemy3">
+            <img class="img-responsive img-left player" src="gifs/mileena-main.gif" alt="">
+            <h4>Mileena</h4>
+            <h4>Health: 120</h4>
+        </div>
+        <div id="enemy4">
+            <img class="img-responsive img-left player" src="gifs/scorpion-main.gif" alt="">
+            <h4>Scorpion</h4>
+            <h4>Health: 130</h4>
+        </div>
+
+<!--BATTLE BUTTON-->
+        <button type="button" class="btn btn-danger btn-lg" id="battleButton">START BATTLE</button>  
+        <button type="button" class="btn btn-danger btn-lg" id="fight">FIGHT</button> 
+        <button type="button" class="btn btn-danger btn-lg" id="nextBattle">YOU WIN. START NEXT BATTLE.</button>       
+   
+    </header>
+<!--  Battle Ground -->
+    <div class="battleGround">
+        <div id="stage1">
+         <div id="userStats"></div>
+        </div>
+        <div id="fatality">
+        <img id="fatal1" src="gifs/goro-win.gif" alt="">
+        <img id="fatal2" src="gifs/subzero-win.gif" alt="">
+        <img id="fatal3" src="gifs/mileena-win.gif" alt="">
+        <img id="fatal4" src="gifs/scorpion-win.gif" alt="">
+        </div>
+        <div id="stage2">
+         <div id="enemyStats"></div> 
+        </div>
+    </div>
+    
+    
+
+    <!-- Content Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-heading" id="choice1">CHOOSE YOUR FIGHTER</h1>
+                    <h1 class="section-heading" id="choice2">CHOOSE YOUR ENEMY</h1>
+                    
+                    <p class="lead section-lead"></p>
+                    <p class="section-paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- My Game JS -->
+    <script src="js/RPG.js"></script>
+
+    
+
+</body>
+
+</html>
