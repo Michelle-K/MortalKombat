@@ -1,2 +1,2 @@
 # Mortal Kombat Tribute Game
-![Preview](/MK.gif)
+![Preview](/mk.gif)
